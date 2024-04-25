@@ -1,0 +1,108 @@
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+figure,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > section {
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0074d9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+main ul li {
+    list-style: none;
+    margin: 1rem 0 1rem 0;
+}
+  
+main ul li a {
+    color: black;
+    text-decoration: none;
+}
+  
+main ul li a:hover {
+    transition: ease-in-out 0.1s;
+    opacity: 0.8;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
+
+
+main ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .fav-button {
+    background-color: #ff4136;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  main ul li button:hover {
+    transition: ease-in-out 0.1s;
+    opacity: 0.8;
+  }
